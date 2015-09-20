@@ -586,18 +586,18 @@ a:active, a:hover {
     transform: translateY(0px);
 }
 
-#mainnav .submenu {
+#mainnav .submenu , #mainnav ul li ul {
     z-index: 9999999;
     background-color: #fff;
     border-radius: 0 0 3px 3px;
     padding: 11px 0 14px;
 }
 
-#mainnav .submenu .submenu {
+#mainnav .submenu .submenu , #mainnav ul li ul li ul {
     border-radius: 3px;
 }
 
-#mainnav .submenu li a {
+#mainnav .submenu li a , #mainnav ul li ul li a{
     color: #747c84;
     display: block;
     font-size: 14px;
@@ -611,11 +611,11 @@ a:active, a:hover {
     transition: all 0.2s ease 0s;
 }
 
-#mainnav .submenu li:first-child a {
+#mainnav .submenu li:first-child a , #mainnav ul li ul li:first-child a {
     border: 0;
 }
 
-#mainnav .submenu li:hover > a {
+#mainnav .submenu li:hover > a , #mainnav ul li ul li:hover > a {
     color: #323a45;
 }
 /* Mobile navigation */
