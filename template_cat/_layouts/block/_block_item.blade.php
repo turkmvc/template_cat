@@ -3,15 +3,15 @@
         @if($block_detail['data']['content_embed'])
             @if($block_detail['data']['content_type']=="content")
                 @if(in_array($user_role_id,unserialize($block_detail['data']['content']['access'])))
-                    @include('template_example._layouts.block._block_item_content',['block_detail'=>$block_detail])
+                    @include('template_cat._layouts.block._block_item_content',['block_detail'=>$block_detail])
                 @endif
             @elseif($block_detail['data']['content_type']=="component")
-                @include('template_example._layouts.block._block_item_component',['block_detail'=>$block_detail])
+                @include('template_cat._layouts.block._block_item_component',['block_detail'=>$block_detail])
             @elseif($block_detail['data']['content_type']=="link")
-                @include('template_example._layouts.block._block_item_link',['block_detail'=>$block_detail])
+                @include('template_cat._layouts.block._block_item_link',['block_detail'=>$block_detail])
             @endif
         @else
-            @include('template_example._layouts.block._block_li',['block_detail'=>$block_detail])
+            @include('template_cat._layouts.block._block_li',['block_detail'=>$block_detail])
         @endif
     @endif
 @elseif($block_detail['type']=="content")
@@ -24,7 +24,7 @@
             @if(isset($block_detail['children']))
                 <ul>
                     @foreach($block_detail['children'] as $children)
-                        @include('template_example._layouts.block._block_detail',['block_detail'=>$children])
+                        @include('template_cat._layouts.block._block_detail',['block_detail'=>$children])
                     @endforeach
                 </ul>
             @endif
@@ -35,11 +35,11 @@
         @if(isset($block_detail['children']))
             <ul>
                 @foreach($block_detail['children'] as $children)
-                    @include('template_example._layouts.block._block_detail',['block_detail'=>$children])
+                    @include('template_cat._layouts.block._block_detail',['block_detail'=>$children])
                 @endforeach
             </ul>
         @endif
     </li>
 @elseif($block_detail['type']=="block")
-    @include('template_example._layouts.block._block_item_block',['block_detail'=>$block_detail])
+    @include('template_cat._layouts.block._block_item_block',['block_detail'=>$block_detail])
 @endif
