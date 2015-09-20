@@ -1,6 +1,6 @@
 <li class="embed">
     @if($block_detail['data']['content']['title_visibility'])
-    <h4 class="title"> <span>{{ $block_detail['data']['content']['title'] }}</span> </h4>
+    <h3>{{ $block_detail['data']['content']['title'] }}</h3>
     @endif
     <p>{{ $block_detail['data']['content']['content'] }}</p>
     @if(isset($block_detail['children']))

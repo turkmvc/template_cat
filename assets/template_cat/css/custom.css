@@ -775,25 +775,30 @@ section h2.title
 
 .footer .copy-right a:hover { color: #fff;}
 
-.content_right { padding-top: 30px;}
-.content_right .block
+.content_right , .content_left { padding-top: 30px;}
+.content_left .block , .content_right .block
 {
     background-color: #F9F9FA;
     padding: 20px 40px;
     margin: 10px 0 30px 0;
 }
-.content_right .block h3 { font-size: 24px; padding: 0; margin: 0; font-weight: 400;}
-.content_right .block .content ul { margin:0px; list-style: none;}
-.content_right .block .content ul li {line-height: 47px;
+.content_left .block h3 , .content_right .block h3 { font-size: 24px; padding: 0; margin: 0; font-weight: 400;}
+.content_left .block .content ul  , .content_right .block .content ul { margin:0px; list-style: none;}
+.content_left .block .content ul li  , .content_right .block .content ul li {line-height: 47px;
     font-size: 16px; border-top: 1px solid #F1F1F1;}
-.content_right .block .content ul li:first-child { border: 0px none;}
-.content_right .block .content ul li:last-child{ padding-bottom: 0px;}
-.content_right .block .content ul li a { color: #747C84;}
-.content_right .block .content ul li.active a {color: #323A45;
+.content_left .block .content ul li:first-child , .content_right .block .content ul li:first-child { border: 0px none;}
+.content_left .block .content ul li:last-child , .content_right .block .content ul li:last-child{ padding-bottom: 0px;}
+.content_left .block .content ul li a , .content_right .block .content ul li a { color: #747C84;}
+.content_left .block .content ul li.active a  , .content_right .block .content ul li.active a {color: #323A45;
     font-weight: 600;
     cursor: default;}
-.content_right .block .content ul li:hover a { color: #0880D6;}
+.content_left .block .content ul li:hover a , .content_right .block .content ul li:hover a { color: #0880D6;}
 
+.content_left .block .content ul li ul  , .content_right .block .content ul li ul { display:none;}
+.content_left .block .content ul li:hover ul  , .content_right .block .content ul li:hover ul { display:block;}
+.content_left .block .content ul li.embed  h3 , .content_right .block .content ul li.embed h3  , .content_left .block .content ul li.embed  , .content_right .block .content ul li.embed  { line-height:normal;}
+
+                  
 
 .page-title { color: #FFF;
     padding: 31px 0px;}

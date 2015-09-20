@@ -1,10 +1,10 @@
 @if(in_array($user_role_id,unserialize($item['access'])))
     @unless($item['list_embed'])
-        <div class="widget">
+        <div class="block">
             @if($item['title_visibility'])
-              <h4 class="title"> <span>{{ $item['title'] }}</span> </h4>
+              <h3>{{ $item['title'] }}</h3>
             @endif
-            <div class="widget-content">
+            <div class="content">
                 @endunless
                 <ul>
                     @foreach($item['block_detail'] as $block_detail)

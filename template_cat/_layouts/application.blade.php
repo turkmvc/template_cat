@@ -52,9 +52,7 @@
         </div>
     </div>
 </header>
-
 @yield('content_top')
-
 <div class="container">
     <div class="row">
             @unless(in_array('content_left',$hidden_fields))

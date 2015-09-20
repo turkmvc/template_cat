@@ -18,7 +18,7 @@
     @if(in_array($user_role_id,unserialize($block_detail['data']['access'])))
         <li class="embed">
             @if($block_detail['data']['title_visibility'])
-            <h4 class="title"> <span>{{ $block_detail['data']['title'] }}</span> </h4>
+            <h3>{{ $block_detail['data']['title'] }}</h3>
             @endif
             <p>{{ $block_detail['data']['content'] }}</p>
             @if(isset($block_detail['children']))
