@@ -2,6 +2,7 @@
 
 @foreach(['navigation','content_top','content_left','content_main','content_right','content_bottom','footer_top','footer'] as $field_name)
 @section($field_name)
+	@parent
     @if(array_key_exists($field_name,$field_details))
         @foreach($field_details[$field_name] as $item)
             @if($item['type']=="content")
